@@ -1,0 +1,60 @@
+* {
+	box-sizing:border-box;
+}
+body,
+html {
+	height:100%;
+	font-family:Helvetica, Arial, sans-serif;
+}
+.wontfix {
+	list-style-type: "\1f5d1";
+}
+.icebox {
+	list-style-type: "\1f9ca";
+}
+.backlog {
+	list-style-type: "\1f4dc";
+}
+.sprint {
+	list-style-type: "\1f3c3\200d";
+}
+.hotfix {
+	list-style-type: "\1f525";
+}
+.fix-now {
+	list-style-type: "\26a0";
+}
+table {
+	border-spacing:1;
+	border-collapse:collapse;
+	background:#fff;
+	border-radius:10px;
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	max-width: 800px;
+}
+table td,
+table th {
+	padding-left:8px;
+	width: calc(100% / 6);
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+}
+table td {
+	font-size:3em;
+	text-align: center;
+	font-family: "Segoe UI Emoji";
+}
+table thead tr {
+	color: #fff;
+	height:60px;
+	background:#36304a;
+}
+table tbody tr {
+	height:50px;
+}
+table tbody tr:last-child {
+	border:0;
+}

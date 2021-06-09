@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Bug prioritization matrix</title>
+</head>
+<body>
+	<h1>How to prioritize that bug</h1>
+	<p>So many bugs so little time, how to know what bug is important, and how to prioritize among them. This is a little tool that could help in that decision making</p>
+
+	<table>
+		<caption>the Bug prioritization Matrix</caption>
+		<thead>
+			<tr>
+				<th scope="col">Who's affected / What are the consequenses</th>
+				<th scope="col">🤷‍ none</th>
+				<th scope="col">🎨 Minor aesthetic error (alignment, color etc)</th>
+				<th scope="col">❕ Major aesthetic error, strange interaction, bad performance</th>
+				<th scope="col">💣 Broken things, important content isn't shown, important buttons don't work. Awful performance</th>
+				<th scope="col">💥 Extremely critical. Site is down, nothing works</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">🤷‍ No one</th>
+				<td>🗑</td><td>🗑</td><td>🗑</td><td>🗑</td><td>🗑</td>
+			</tr>
+			<tr>
+				<th scope="row">One person or only admins/devs</th>
+				<td>🗑</td><td>🗑</td><td>🧊</td><td>🔥</td><td>⚠</td>
+			</tr>
+			<tr>
+				<th scope="row">A few users or only editors</th>
+				<td>🗑</td><td>🧊</td><td>📜</td><td>🔥</td><td>⚠</td>
+			</tr>
+			<tr>
+				<th scope="row">Many users/visitors</th>
+				<td>🗑</td><td>📜</td><td>🏃‍</td><td>⚠</td><td>⚠</td>
+			</tr>
+			<tr>
+				<th scope="row">All users</th>
+				<td>🗑</td><td>📜</td><td>🔥</td><td>⚠</td><td>⚠</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>Legend</h2>
+	<ul class="matrix-legend">
+		<li class="wontfix">Wont fix</li>
+		<li class="icebox">Put in icebox</li>
+		<li class="backlog">Put in backlog (prioritize in next sprint start)</li>
+		<li class="sprint">ut in current sprint, release in planned sprint release</li>
+		<li class="hotfix">Put in current sprint, Hotfix when done</li>
+		<li class="fix-now">Fix immediately, put everything else aside. Time to do some overtime?</li>
+	</ul>
+</body>
+</html>
